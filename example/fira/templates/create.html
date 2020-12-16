@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<body>
+    <div align="center" >
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form }}
+
+            <p></p>
+            <p></p>
+            <div style="width:100%;">
+                <div id="cropper"></div>
+            </div>
+            {{ form.media }}
+
+            <p></p>
+            <p></p>
+            <div>
+            <input type="submit" value="확인" style="width :211px;
+            height:52px;
+            color:white;
+            font-size :x-large;
+            font-family: 'Fantasy';
+            font-weight: bolder;
+            background-color:#61f1ad;
+            border-color:#61f1ad;
+            -moz-box-shadow: 20px 20px 100px rgba(109, 146, 15, .9);
+            -webkit-box-shadow: 20px 20px 100px rgba(109, 146, 15, .9);
+            box-shadow: 20px 20px 50px rgb(220,220,220);">
+
+            </div>
+
+        </form>
+    </div>
+</body>
+
